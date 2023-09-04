@@ -1,0 +1,17 @@
+<svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="426px" height="78px">
+<defs>
+<linearGradient id="PSgrad_0" x1="100%" x2="0%" y1="0%" y2="0%">
+  <stop offset="0%" stop-color="rgb(255,63,4)" stop-opacity="1" />
+  <stop offset="90%" stop-color="rgb(255,255,255)" stop-opacity="1" />
+  <stop offset="100%" stop-color="rgb(255,255,255)" stop-opacity="1" />
+</linearGradient>
+
+</defs>
+<text kerning="auto" font-family="Myriad Pro" fill="rgb(0, 0, 0)" transform="matrix( 1.27134410390151, 0, 0, 1.27134410390151,31.4342631454093, 41.1631919927884)" font-size="45.621px"> <tspan><tspan font-size="45.621px" font-family="MuseoSansCyrl" fill="#FFFFFF">&#1055;&#1091;&#1090;&#1077;&#1096;&#1077;&#1089;&#1090;&#1074;&#1080;&#1077;</tspan> </tspan><tspan x="0" dy="1.2em"><tspan font-size="19.664px" font-family="MuseoSansCyrl" fill="#FFFFFF">&#1085;&#1072;&#32;&#1082;&#1088;&#1072;&#1089;&#1085;&#1091;&#1102;&#32;&#1087;&#1083;&#1072;&#1085;&#1077;&#1090;&#1091;</tspan> </tspan>
+</text>
+<text kerning="auto" font-family="Myriad Pro" fill="url(#PSgrad_0)" transform="matrix( 1.27134410390151, 0, 0, 1.27134410390151,31.4342631454093, 41.1631919927884)" font-size="45.621px"> <tspan><tspan font-size="45.621px" font-family="MuseoSansCyrl" fill="#FFFFFF">&#1055;&#1091;&#1090;&#1077;&#1096;&#1077;&#1089;&#1090;&#1074;&#1080;&#1077;</tspan> </tspan><tspan x="0" dy="1.2em"><tspan font-size="19.664px" font-family="MuseoSansCyrl" fill="#FFFFFF">&#1085;&#1072;&#32;&#1082;&#1088;&#1072;&#1089;&#1085;&#1091;&#1102;&#32;&#1087;&#1083;&#1072;&#1085;&#1077;&#1090;&#1091;</tspan> </tspan>
+</text>
+</svg>
