@@ -1,3 +1,8 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import TravelDays, YearCalendar, DefensePercent, Top
+
+admin.site.register(Top)
+admin.site.register(TravelDays)
+admin.site.register(DefensePercent)
+admin.site.register(YearCalendar)

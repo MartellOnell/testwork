@@ -6,7 +6,8 @@ import xImg from "./png/x.png"
 import "./index.css"
 import MediaQuery from 'react-responsive'
 import { motion } from "framer-motion"
-import { useState } from "react"
+import { useEffect, useState } from "react"
+import axios from 'axios'
 
 export const Landing = () => {
     return (
@@ -145,33 +146,51 @@ const MainFrame = () => {
 }
 
 const InfoBoxes = () => {
+    const [data, setData] = useState('')
+
+    useEffect(() => {
+        axios.get("http://127.0.0.1:8000/")
+        .then(res => {
+            setData(res["data"])
+        })
+        .catch(err => {
+            setData({
+                "top": "2",
+                "percent": "40",
+                "yearcalendar": "2000",
+                "traveldays": "300"
+            })
+            console.log(err)
+        })
+    }, [])
+
     return (
         <div className="info-boxes-container">
             <div className="info-box-tl">
                 <div className="info-box-a-tl">
                     <p className="info-box-text">мы</p>
-                    <h1 className="info-box-text-high">1</h1>
+                    <h1 className="info-box-text-high">{data["top"]}</h1>
                     <p className="info-box-text">на рынке</p>
                 </div>
             </div>
             <div className="info-box-tr">
                 <div className="info-box-a-tr">
                     <p className="info-box-text">гарантируем</p>
-                    <h1 className="info-box-text-high">50%</h1>{/* фетч даты */}
+                    <h1 className="info-box-text-high">{data["percent"]}%</h1>
                     <p className="info-box-text">безопасность</p>
                 </div>
             </div>
             <div className="info-box-br">
                 <div className="info-box-a-br">
                     <p className="info-box-text">календарик за</p>
-                    <h1 className="info-box-text-high">2001<span>г.</span></h1>{/* фетч даты */}
+                    <h1 className="info-box-text-high">{data["yearcalendar"]}<span>г.</span></h1>{/* фетч даты */}
                     <p className="info-box-text">в подарок</p>
                 </div>
             </div>
             <div className="info-box-bl">
                 <div className="info-box-a-bl">
                     <p className="info-box-text">путешествие</p>
-                    <h1 className="info-box-text-high">597</h1>{/* фетч даты */}
+                    <h1 className="info-box-text-high">{data["traveldays"]}</h1>{/* фетч даты */}
                     <p className="info-box-text">дней</p>
                 </div>
             </div>
