@@ -123,10 +123,22 @@ const MainFrame = () => {
                     <InfoBoxes />
                 </div>
             </MediaQuery>
-            <MediaQuery maxWidth={1399} minWidth={720}>
-                <h1 style={{
-                    color: "#fff"
-                }}>Test</h1>
+            <MediaQuery maxWidth={1399}>
+                <div className="wrap">
+                    <div className="title-wrap">
+                        <div className="mars-title">
+                            <h1 className="mars-text-high">ПУТЕШЕСТВИЕ</h1>
+                            <p className="mars-text">на красную планету</p>
+                        </div>
+                        <button className="mars-button">
+                            <img src={marsButtonBox} alt="marsButtonBox" />
+                            <p className="mars-button-text">Начать Путешествие</p>
+                        </button>
+                    </div>
+                    <div className="info-seg-wrap">
+                        <InfoBoxes />
+                    </div>
+                </div>
             </MediaQuery>
         </>
     )
